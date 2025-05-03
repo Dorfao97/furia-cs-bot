@@ -8,6 +8,11 @@ load_dotenv()
 # Carrega o token do Telegram
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 
+# Verifica se o token foi carregado corretamente
+if not TOKEN:
+    print("Erro: Token do Telegram não encontrado.")
+    exit()
+
 # Dicionário para armazenar preferências dos usuários
 user_preferences = {}
 
@@ -30,7 +35,6 @@ async def info(update: Update, context: CallbackContext):
 
 # Função para o comando /preferencia
 async def preferencia(update: Update, context: CallbackContext):
-    # Pergunta ao usuário qual jogo ele prefere
     keyboard = [
         [InlineKeyboardButton("Counter-Strike", callback_data='CS')],
         [InlineKeyboardButton("Valorant", callback_data='Valorant')],
@@ -76,4 +80,3 @@ if __name__ == '__main__':
     # Iniciando o bot
     print("Bot rodando... vá até o Telegram e digite /start")
     application.run_polling()
-
