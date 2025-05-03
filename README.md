@@ -1,26 +1,48 @@
-# 🤖 FURIA CS Bot
+# 🤖 FURIA CS Bot - Telegram
 
-Um bot do Telegram feito em Python para interagir com fãs da FURIA Esports!  
-Com comandos personalizados e menus interativos, o bot permite ao usuário escolher seu jogo favorito (CS ou Valorant) e ainda responde a mensagens com menções à FURIA.
+Bot oficial para fãs do time de CS:GO da **FURIA**!  
+Acompanhe partidas, veja clipes, receba notificações e interaja como um verdadeiro torcedor.  
+Feito para o desafio de estágio da FURIA 2025.
 
-## 🚀 Funcionalidades
+---
 
-- `/start` – Inicia o bot e dá boas-vindas.
-- `/ajuda` – Mostra todos os comandos disponíveis.
-- `/info` – Traz informações sobre o time FURIA.
-- `/preferencia` – Menu interativo para escolher entre Counter-Strike ou Valorant.
-- Mensagens com "FURIA" recebem uma resposta personalizada.
-- Armazena a preferência de jogo por usuário (em memória).
+## 📲 Como usar
 
-## 🛠️ Tecnologias Utilizadas
+1. Acesse o bot no Telegram (link em breve).
+2. Digite `/start` para começar.
+3. Use os comandos disponíveis para explorar os recursos.
 
-- [Python 3](https://www.python.org/)
-- [python-telegram-bot](https://docs.python-telegram-bot.org/)
-- [dotenv](https://pypi.org/project/python-dotenv/)
+---
 
-## 🧪 Como rodar o projeto localmente
+## ⚙️ Funcionalidades
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/Dorfao97/furia-cs-bot.git
-   cd furia-cs-bot
+| Comando              | Descrição                                                                 |
+|----------------------|--------------------------------------------------------------------------|
+| `/start`             | Inicia o bot e envia uma mensagem de boas-vindas.                        |
+| `/ajuda`             | Lista todos os comandos disponíveis.                                     |
+| `/info`              | Informa sobre o time de CS da FURIA.                                     |
+| `/preferencia`       | Escolha entre *CS* ou *Valorant* como jogo favorito.                     |
+| `/proximosjogos`     | Mostra os próximos confrontos da FURIA.                                  |
+| `/notificar`         | Cadastra o usuário para receber alertas antes dos jogos.                 |
+| `/clipes`            | Envia links com os melhores momentos recentes da FURIA.                  |
+| `/torcer`            | Envia uma mensagem de torcida animada.                                   |
+| Texto com “FURIA”    | Responde com uma mensagem especial de admiração ao time.                 |
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- Python 3.10+
+- [python-telegram-bot v20+](https://docs.python-telegram-bot.org/en/stable/)
+- dotenv para variáveis de ambiente
+
+---
+
+## 📁 Estrutura Básica
+
+```bash
+.
+├── bot.py              # Código principal do bot
+├── .env                # Token do Telegram (não subir no GitHub)
+├── requirements.txt    # Dependências do projeto
+└── README.md           # Este documento
